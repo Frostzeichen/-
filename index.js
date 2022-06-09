@@ -58,7 +58,7 @@ app.get("/writer", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("template.pug", {title: articleTitles})
+  res.render("index.pug", {title: articleTitles})
 });
 
 app.post("/newArticle", (req,res) => {
@@ -77,7 +77,8 @@ app.post("/newArticle", (req,res) => {
   .then((ret) => {
     toArticleTitles = [{title: newArticle.title, author: newArticle.author, content: newArticle.content}]
     articleTitles.push(toArticleTitles[0])
-  })
+  });
+  res.render("congrats-newArticle.pug")
 });
 
 //app.use
@@ -86,9 +87,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //server info
-const port = 8080;
+const port = 81;
 const appName = "六十四式 || Experimental App";
-const version = "version 0.1.0";
+const version = "version 0.3.0";
 server.listen(port, (error) => {
   if(error){
     console.error(error);

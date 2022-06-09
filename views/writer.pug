@@ -1,8 +1,15 @@
 html
   head
+    style
+      include style.css
     title Writer - 六十四式
   body
     h1 Writer
+    nav
+      ul(class="navUL")
+        a(href="/" class="navHyperLink")
+          li(class="navLI") Article Index
+      ul(class="navUL")
     form(action="/newArticle" method="POST")
       label(for="title") Title: 
       input(type="textbox" placeholder="article title" name="title")

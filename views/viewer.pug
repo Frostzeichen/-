@@ -1,11 +1,17 @@
 html
   head
+    style
+      include style.css
     title #{title} - 六十四式
   body
-    h1 Reader
-    h2 #{title}
-    h3 author: #{author}
+    h1 Viewer
+    nav
+      ul(class="navUL")
+        a(href="/" class="navHyperLink")
+          li(class="navLI") Article Index
+      ul(class="navUL")
+        a(href="/writer" class="navHyperLink")
+          li(class="navLI") Write an article
+    h2(class="title") #{title}
+    h3(class="author") author: #{author}
     main #{content}
-
-    a(href="/") Article Index
-    a(href="/writer") Write an article

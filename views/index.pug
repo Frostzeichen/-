@@ -1,0 +1,19 @@
+html
+  head
+    style
+      include style.css
+    title Type 64
+  body
+    h1 Article Index
+    nav
+      ul(class="navUL")
+        a(href="/writer" class="navHyperLink")
+          li(class="navLI") Write an article
+    main
+      ol
+        for val in title
+          li(class="articleCard")
+            a(class="cardHyperLink" href="/article/" + val.title) #{val.title}
+    aside
+      p(id="numberOfArticles") There are #{title.length} articles in this site!
+    

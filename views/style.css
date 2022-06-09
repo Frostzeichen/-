@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #FEFBE7;
+}
+
+h1 {
+  background: #A0BCC2;
+  width: 100%;
+  padding-left: 15%;
+  margin-bottom: 0;
+}
+
+nav {
+  background: #DAE5D0;
+  height: 36px;
+  padding-left: 15%;
+}
+
+.navUL {
+  margin: 0;
+  padding-top: 4px;
+  display: inline-block;
+}
+
+.navHyperLink {
+  text-decoration: none;
+  color: black;
+  font-family: "Verdana";
+  font-size: 13px;
+}
+
+.navLI {
+  background: #F9EBC8;
+  display: inline-block;
+  border: 2px solid #F9EBC8;
+  border-radius: 8px;
+  width: 100px;
+  list-style: none;
+  padding: 3px;
+  margin-right: 0;
+  margin-left: 0;
+  box-shadow: 0 1px gray, 0 2px black;
+}
+
+.navLI:hover {
+  background: #FEFBE7;
+}
+
+.navLI:active {
+  background: #F9EBC8;
+  box-shadow: 0 0 #fff, 0 0 #fff;
+  transform: translateY(2px);
+}
+
+main {
+  margin-left: 25%;
+}
+  
+.articleCard {
+  list-style-position: inside;
+/*   background: gray; */
+  width: 300px;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+
+.cardHyperLink {
+  font-family: "Times New Roman";
+  text-decoration: none;
+  color: #A0BCC2;
+}
+
+.cardHyperLink:hover {
+  text-decoration: underline;
+}
+
+.cardHyperLink:active {
+  text-decoration: none;
+  color: #DAE5D0;
+}
+
+#numberOfArticles {
+  background: #DAE5D0;
+  position: absolute;
+  top: 30%;
+  width: 125px;
+  height: 200px;
+  z-index: 3;
+  margin-left: 3px;
+  padding: 10px;
+  color: black;
+}
+
+/* Viewer */
+.title {
+  text-align: center;
+}
+
+.author {
+  text-align: center;
+  color: gray;
+  font-family: "Verdana";
+  font-size: 12px;
+  font-style: italic;
+}
