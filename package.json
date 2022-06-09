@@ -1,6 +1,8 @@
 {
   "name": "Type 64",
   "version": "0.1.1",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "start": "npx nodemon index.js"
   },
