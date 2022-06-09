@@ -1,0 +1,21 @@
+html
+  head
+    title Writer - 六十四式
+  body
+    h1 Writer
+    form(action="/newArticle" method="POST")
+      label(for="title") Title: 
+      input(type="textbox" placeholder="article title" name="title")
+      br
+      label(for="author") Author: 
+      input(type="textbox" placeholder="author" name="author")
+      br
+      label(for="content") Text: 
+      textarea(placeholder="write your stuff here" name="content" autocomplete="off")
+      br
+      button Submit
+
+    p Note: Sorry, tags don't work yet!
+    p Note: すみません、タグが機能しない!
+      
+    a(href="/") Article Index

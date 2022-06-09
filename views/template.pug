@@ -1,0 +1,12 @@
+html
+  head
+    title Type 64
+  body
+    h1 Article Index
+    ol
+      for val in title
+        li
+          a(href="/article/" + val.title) #{val.title}
+
+    p There are #{title.length} articles in this site!
+    a(href="/writer") Write an article
